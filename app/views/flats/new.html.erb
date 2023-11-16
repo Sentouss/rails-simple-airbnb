@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h1>Add a new Flat</h1>
+  <%= simple_form_for(@flat, html: { class: 'form-horizontal' }) do |f| %>
+    <div class="form-group">
+      <%= f.input :name, input_html: { class: 'form-control' }, wrapper: false, label_html: { class: 'form-label' } %>
+    </div>
+    <div class="form-group">
+      <%= f.input :address, input_html: { class: 'form-control' }, wrapper: false, label_html: { class: 'form-label' } %>
+    </div>
+    <div class="form-group">
+      <%= f.input :description, as: :text, input_html: { class: 'form-control' }, wrapper: false, label_html: { class: 'form-label' } %>
+    </div>
+    <div class="form-group">
+      <%= f.input :picture_url, input_html: { class: 'form-control' }, wrapper: false, label_html: { class: 'form-label' } %>
+    </div>
+    <div class="form-group">
+      <%= f.input :number_of_guests, input_html: { class: 'form-control' }, wrapper: false, label_html: { class: 'form-label' } %>
+    </div>
+    <div class="form-group mb-4">
+      <%= f.input :price_per_night, input_html: { class: 'form-control' }, wrapper: false, label_html: { class: 'form-label' } %>
+    </div>
+    <div class="form-group">
+      <%= f.button :submit, "Add Flat", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

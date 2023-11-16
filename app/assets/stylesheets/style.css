@@ -1,0 +1,5 @@
+.flat-image {
+  width: 100%;  /* Makes the image take the full width of the card */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the area, maintaining its aspect ratio */
+}
